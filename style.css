@@ -544,3 +544,48 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* Student Study Planner Images */
+
+.project-images{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+.project-images img{
+
+    width:30%;
+    min-width:200px;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+
+}
+
+
+.project-images img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .project-images img{
+
+        width:90%;
+        height:auto;
+
+    }
+
+}
