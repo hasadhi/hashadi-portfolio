@@ -140,6 +140,7 @@ section h2{
     display:flex;
     gap:25px;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 
@@ -148,7 +149,7 @@ section h2{
     color:#e2e8f0;
     padding:20px;
     border-radius:15px;
-    width:100%;
+    width:400px;
     transition:0.3s;
 }
 
