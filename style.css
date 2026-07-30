@@ -486,3 +486,31 @@ footer {
     opacity:0.8;
 
 }
+
+.contact-links{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+
+}
+
+
+.contact-links a{
+
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:25px;
+    text-decoration:none;
+
+}
+
+
+.contact-links a:hover{
+
+    opacity:0.8;
+
+}
