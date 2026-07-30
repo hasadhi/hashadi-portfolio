@@ -1,0 +1,18 @@
+{
+  "id": "/todo-app/",
+  "name": "My To-Do List",
+  "short_name": "Todo",
+  "description": "A smart task management app",
+  "start_url": "/todo-app/index.html",
+  "display": "standalone",
+  "background_color": "#f2f5f9",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>My Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+👤 My Profile
+</h1>
+
+
+
+<p id="profileEmail"></p>
+
+
+
+
+<div class="stats">
+
+
+<h3>
+📊 Task Statistics
+</h3>
+
+
+<p id="totalTasks">
+Total Tasks: 0
+</p>
+
+
+<p id="completedTasks">
+Completed: 0
+</p>
+
+
+<p id="pendingTasks">
+Pending: 0
+</p>
+
+
+<p id="percentage">
+Progress: 0%
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="chart-box">
+
+
+<h3>
+📈 Task Categories
+</h3>
+
+
+<canvas id="taskChart"></canvas>
+
+
+
+</div>
+
+
+
+
+
+<button onclick="goBack()">
+⬅ Back To Tasks
+</button>
+
+
+
+</div>
+
+
+
+
+<script type="module" src="profile.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>My To-Do List</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>My To-Do List</h1>
+
+<div class="dashboard">
+
+<h2 id="welcomeText">
+Welcome 👋
+</h2>
+
+
+<div id="todayTasks">
+
+</div>
+
+
+<div id="recentTasks">
+
+</div>
+
+
+</div>
+
+
+<p id="userEmail"></p>
+
+
+
+<button onclick="logout()" class="logout-btn">
+Logout
+</button>
+
+<button onclick="openProfile()">
+👤 Profile
+</button>
+
+
+
+<button class="mode-btn" onclick="toggleMode()">
+🌙 Change Mode
+</button>
+
+
+
+
+
+<!-- Search Box -->
+
+<input 
+type="text"
+id="searchInput"
+placeholder="🔍 Search task..."
+onkeyup="searchTask()"
+>
+
+
+
+
+
+<!-- Filter Buttons -->
+
+<div class="filters">
+
+
+<button onclick="filterTasks('all')">
+All
+</button>
+
+
+
+<button onclick="filterTasks('completed')">
+Completed
+</button>
+
+
+
+<button onclick="filterTasks('pending')">
+Pending
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- Task Input -->
+
+
+<input 
+type="text"
+id="taskInput"
+placeholder="Enter your task"
+>
+
+
+
+
+
+<div class="input-box">
+
+
+
+<input 
+type="datetime-local"
+id="dateInput"
+>
+
+
+
+
+<select id="priority">
+
+<option value="High">
+🔴 High
+</option>
+
+
+<option value="Medium">
+🟡 Medium
+</option>
+
+
+<option value="Low">
+🟢 Low
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select id="category">
+
+
+<option value="Study">
+🎓 Study
+</option>
+
+
+<option value="Work">
+💻 Work
+</option>
+
+
+<option value="Personal">
+🏠 Personal
+</option>
+
+
+<option value="Other">
+📌 Other
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button id="addTask">
+Add Task
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Tasks Display -->
+ <!-- Task Counter -->
+
+<div id="counter">
+
+</div>
+
+
+
+<!-- Progress -->
+
+<div class="progress-box">
+
+<p id="progressText">
+Progress: 0%
+</p>
+
+
+<div class="progress">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+</div>
+
+<div id="taskList"></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="module" src="script.js"></script>
+
+
+
+</body>
+
+</html>
